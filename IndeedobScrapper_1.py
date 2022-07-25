@@ -32,6 +32,16 @@ try:
                 continue
             print(job_title.text)
 
+        # class="turnstileLink companyOverviewLink"
+        companyName = jobSearchResult.find("a" , class_="companyOverviewLink" )
+        if companyName == None:
+            continue
+        print(companyName.text)
+
+
+
+
+
 
 except Exception as e:
     print("*****************Exception Start*********************")
@@ -47,3 +57,5 @@ except Exception as e:
 # jobTitle css-1h4a4n5 eu4oa1w0
 
 # <span id="jobTitle-451bc6816c540b4d" title="Reporting and Data Analyst">Reporting and Data Analyst</span>
+
+# data-tn-element="companyName"
