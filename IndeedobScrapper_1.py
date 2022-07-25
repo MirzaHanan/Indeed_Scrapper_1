@@ -21,6 +21,9 @@ try:
     # print(jobSearchResults.prettify())
 
     for jobSearchResult in jobSearchResults:
+
+        print()
+
         title = jobSearchResult.find("h2" , class_="jobTitle")
         # print( " Title Type : ",type(title))
         # print(title)
@@ -37,6 +40,13 @@ try:
         if companyName == None:
             continue
         print(companyName.text)
+
+        # class="companyLocation"
+
+        companyLocation = jobSearchResult.find("div" , class_="companyLocation")
+        if companyLocation == None:
+            continue
+        print(companyLocation.text)
 
 
 
