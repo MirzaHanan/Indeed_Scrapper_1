@@ -60,30 +60,7 @@ try:
                 csv_writer.writerow([job_title.text , companyName.text , None])
             else:
                 csv_writer.writerow([])
-            
-
-
-
-
-
-
-
-
-
-
+           
 except Exception as e:
-    print("*****************Exception Start*********************")
     print(e)
-    print("*****************Exception End***********************")
 
-
-
-# jobTitle-d0a667165ee3fe93
-# jobTitle-3de097e1a6a0a233
-
-# jobTitle jobTitle-newJob css-bdjp2m eu4oa1w0
-# jobTitle css-1h4a4n5 eu4oa1w0
-
-# <span id="jobTitle-451bc6816c540b4d" title="Reporting and Data Analyst">Reporting and Data Analyst</span>
-
-# data-tn-element="companyName"
