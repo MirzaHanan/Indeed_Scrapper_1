@@ -10,18 +10,11 @@ try:
 
     page = requests.get(url)
     print(page)
-    # with open ("index.html" , "w") as f:
-    #     f.write(page)
-    
-    # with open ("index.html" , "r") as f:
-    #     data = f.read(page)
 
     soup  = BeautifulSoup(page.content , "html.parser")
-    # print(soup)
 
 
     jobSearchResults = soup.find( "ul" , class_="jobsearch-ResultsList css-0")
-    # print(jobSearchResults.prettify())
     field_name = ["Job Title" , "Company Name" , "Location"]
 
     with open("job.csv","w" , newline="")as f:
